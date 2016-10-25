@@ -46,7 +46,24 @@
     </div>
   </header>
 
-  <%= yield %>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <%= yield %>
+        </div>
+        <div class="col-md-4">
+          <%= render 'partials/sidebar' %>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Copyright &copy 2016 Mick McCarthy, All Rights Reserved</p>
+    </div>
+  </footer>
 
 </body>
 </html>
